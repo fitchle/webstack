@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo build --parallel",
+    "dev": "turbo dev --parallel",
+    "start": "turbo start --parallel",
+    "lint": "turbo lint --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@stackfitch/eslint-config": "workspace:*",
+    "@turbo/gen": "^1.10.7",
+    "eslint": "^8.44.0",
+    "prettier": "^2.8.8",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@7.15.0",
+  "name": "stackfitch"
+}

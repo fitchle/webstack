@@ -1,0 +1,9 @@
+packages:
+  - "apps/*"
+  - "services/*"
+
+  - "packages/ui"
+  - "packages/db"
+  - "packages/config/tsconfig"
+  - "packages/config/eslint"
+  - "packages/config/tailwind-config"
