@@ -1,7 +1,7 @@
 import * as edgedb from "edgedb";
 import e from "./dbschema/edgeql-js";
 
-import config from "./config/credentials.json"
+import {config} from "@stackfitch/db-config"
 
 const client = edgedb.createClient({
     database: config.database,
@@ -9,7 +9,7 @@ const client = edgedb.createClient({
     password: config.password,
     user: config.user,
     tlsCA: config.tls_ca,
-    tlsSecurity: "default",
+    tlsSecurity: "insecure",
 });
 
 export {

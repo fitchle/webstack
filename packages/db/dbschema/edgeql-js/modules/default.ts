@@ -4,40 +4,25 @@
 import * as $ from "../reflection";
 import * as _ from "../imports";
 import type * as _std from "./std";
-export type $MovieλShape = $.typeutil.flatten<_std.$Object_169a5ce7108a11eeb5af6feb88c88f11λShape & {
-  "actors": $.LinkDesc<$Person, $.Cardinality.Many, {}, false, false,  false, false>;
-  "title": $.PropertyDesc<_std.$str, $.Cardinality.One, true, false, false, false>;
+export type $FitchleNodeλShape = $.typeutil.flatten<_std.$Object_a5651777108811ee82a44f13c3f73ceeλShape & {
+  "name": $.PropertyDesc<_std.$str, $.Cardinality.One, true, false, false, false>;
 }>;
-type $Movie = $.ObjectType<"default::Movie", $MovieλShape, null, [
-  ..._std.$Object_169a5ce7108a11eeb5af6feb88c88f11['__exclusives__'],
-  {title: {__element__: _std.$str, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
+type $FitchleNode = $.ObjectType<"default::FitchleNode", $FitchleNodeλShape, null, [
+  ..._std.$Object_a5651777108811ee82a44f13c3f73cee['__exclusives__'],
+  {name: {__element__: _std.$str, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
 ]>;
-const $Movie = $.makeType<$Movie>(_.spec, "094ea551-19ec-11ee-97e6-c57d9855a441", _.syntax.literal);
+const $FitchleNode = $.makeType<$FitchleNode>(_.spec, "a7b87742-1b31-11ee-be9e-3f5f1a3c840d", _.syntax.literal);
 
-const Movie: $.$expr_PathNode<$.TypeSet<$Movie, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Movie, $.Cardinality.Many), null);
-
-export type $PersonλShape = $.typeutil.flatten<_std.$Object_169a5ce7108a11eeb5af6feb88c88f11λShape & {
-  "name": $.PropertyDesc<_std.$str, $.Cardinality.One, false, false, false, false>;
-  "<actors[is Movie]": $.LinkDesc<$Movie, $.Cardinality.Many, {}, false, false,  false, false>;
-  "<actors": $.LinkDesc<$.ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
-}>;
-type $Person = $.ObjectType<"default::Person", $PersonλShape, null, [
-  ..._std.$Object_169a5ce7108a11eeb5af6feb88c88f11['__exclusives__'],
-]>;
-const $Person = $.makeType<$Person>(_.spec, "094d48bf-19ec-11ee-a76d-751ee9c26de7", _.syntax.literal);
-
-const Person: $.$expr_PathNode<$.TypeSet<$Person, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Person, $.Cardinality.Many), null);
+const FitchleNode: $.$expr_PathNode<$.TypeSet<$FitchleNode, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($FitchleNode, $.Cardinality.Many), null);
 
 
 
-export { $Movie, Movie, $Person, Person };
+export { $FitchleNode, FitchleNode };
 
 type __defaultExports = {
-  "Movie": typeof Movie;
-  "Person": typeof Person
+  "FitchleNode": typeof FitchleNode
 };
 const __defaultExports: __defaultExports = {
-  "Movie": Movie,
-  "Person": Person
+  "FitchleNode": FitchleNode
 };
 export default __defaultExports;

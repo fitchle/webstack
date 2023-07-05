@@ -1,16 +1,18 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from './Button';
+import { StorybookButton } from "./Button";
 
-const meta: Meta<typeof Button> = {
-  title: 'Fitchle/Button',
-  component: Button,
+const meta: Meta<typeof StorybookButton> = {
+  title: "Fitchle/Button",
+  component: StorybookButton,
   parameters: {
-    layout: 'centered',
+    layout: "centered"
   },
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof StorybookButton>;
 
-export const ExampleButton: Story = {};
+export const ExampleStorybookButton: Story = { 
+  args: { text: "Storybook", href: "http://localhost:6006" }
+};

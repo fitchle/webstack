@@ -103,6 +103,8 @@ importers:
         specifier: ^4.5.3
         version: 4.9.5
 
+  packages/config/database: {}
+
   packages/config/eslint:
     dependencies:
       eslint-config-next:
@@ -137,13 +139,22 @@ importers:
       edgedb:
         specifier: ^1.3.2
         version: 1.3.2
+      shell-exec:
+        specifier: ^1.1.2
+        version: 1.1.2
     devDependencies:
       '@edgedb/generate':
         specifier: ^0.3.0
         version: 0.3.0(edgedb@1.3.2)
+      '@stackfitch/db-config':
+        specifier: workspace:*
+        version: link:../config/database
       '@stackfitch/tsconfig':
         specifier: workspace:*
         version: link:../config/tsconfig
+      '@types/node':
+        specifier: ^17.0.12
+        version: 17.0.45
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
@@ -4473,7 +4484,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.3.3
+      '@types/node': 17.0.45
     dev: true
 
   /@types/glob@8.1.0:
@@ -4563,10 +4574,6 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: true
 
-  /@types/node@20.3.3:
-    resolution: {integrity: sha512-wheIYdr4NYML61AjC8MKj/2jrR/kDQri/CIpVoZwldwhnIrD/j9jIU5bJ8yBKuB2VhpFV7Ab6G2XkBjv9r9Zzw==}
-    dev: true
-
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
     dev: true
@@ -4631,7 +4638,7 @@ packages:
   /@types/through@0.0.30:
     resolution: {integrity: sha512-FvnCJljyxhPM3gkRgWmxmDZyAQSiBQQWLI0A0VFL0K7W1oRUrPJSqNO0NvTnLkBcotdlp3lKvaT0JrnyRDkzOg==}
     dependencies:
-      '@types/node': 20.3.3
+      '@types/node': 17.0.45
     dev: true
 
   /@types/unist@2.0.6:
@@ -10126,6 +10133,11 @@ packages:
   /shebang-regex@3.0.0:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
+
+  /shell-exec@1.1.2:
+    resolution: {integrity: sha512-v2NWVDP0ws+S7miKy2oSpJ/OuL6NKuMosPNUZLDWFBlMnBtuoZxZOwxpQJwhsFZgMb+r7frpDTT8p4OSnhkpsg==}
+    engines: {node: '>=12'}
+    dev: false
 
   /shelljs@0.8.5:
     resolution: {integrity: sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==}

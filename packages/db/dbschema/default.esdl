@@ -1,12 +1,7 @@
 module default {
-  type Movie {
-    required property title -> str {
+  type FitchleNode {
+    required property name -> str {
       constraint exclusive;
-    };
-    multi link actors -> Person;
-  }
-
-  type Person {
-    required property name -> str;
+    }
   }
 }

@@ -4,6 +4,4 @@ packages:
 
   - "packages/ui"
   - "packages/db"
-  - "packages/config/tsconfig"
-  - "packages/config/eslint"
-  - "packages/config/tailwind-config"
+  - "packages/config/*"

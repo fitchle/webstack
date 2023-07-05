@@ -14,25 +14,25 @@ export type $AccessKind = {
   "Delete": $.$expr_Literal<$AccessKind>;
   "Insert": $.$expr_Literal<$AccessKind>;
 } & $.EnumType<"schema::AccessKind", ["Select", "UpdateRead", "UpdateWrite", "Delete", "Insert"]>;
-const AccessKind: $AccessKind = $.makeType<$AccessKind>(_.spec, "170a2ba8-108a-11ee-9195-c59b711bba68", _.syntax.literal);
+const AccessKind: $AccessKind = $.makeType<$AccessKind>(_.spec, "a5d15898-1088-11ee-accc-a116af02f907", _.syntax.literal);
 
 export type $AccessPolicyAction = {
   "Allow": $.$expr_Literal<$AccessPolicyAction>;
   "Deny": $.$expr_Literal<$AccessPolicyAction>;
 } & $.EnumType<"schema::AccessPolicyAction", ["Allow", "Deny"]>;
-const AccessPolicyAction: $AccessPolicyAction = $.makeType<$AccessPolicyAction>(_.spec, "1709849f-108a-11ee-99fa-6b6d3cdfe5f7", _.syntax.literal);
+const AccessPolicyAction: $AccessPolicyAction = $.makeType<$AccessPolicyAction>(_.spec, "a5d0bb7b-1088-11ee-b5a9-e7b05898a3f4", _.syntax.literal);
 
 export type $Cardinality = {
   "One": $.$expr_Literal<$Cardinality>;
   "Many": $.$expr_Literal<$Cardinality>;
 } & $.EnumType<"schema::Cardinality", ["One", "Many"]>;
-const Cardinality: $Cardinality = $.makeType<$Cardinality>(_.spec, "1704f095-108a-11ee-8be3-ab6b760f29da", _.syntax.literal);
+const Cardinality: $Cardinality = $.makeType<$Cardinality>(_.spec, "a5cc3cdb-1088-11ee-9981-59871bc8e264", _.syntax.literal);
 
 export type $MigrationGeneratedBy = {
   "DevMode": $.$expr_Literal<$MigrationGeneratedBy>;
   "DDLStatement": $.$expr_Literal<$MigrationGeneratedBy>;
 } & $.EnumType<"schema::MigrationGeneratedBy", ["DevMode", "DDLStatement"]>;
-const MigrationGeneratedBy: $MigrationGeneratedBy = $.makeType<$MigrationGeneratedBy>(_.spec, "170d5e02-108a-11ee-89ac-7f3a9e15ca2b", _.syntax.literal);
+const MigrationGeneratedBy: $MigrationGeneratedBy = $.makeType<$MigrationGeneratedBy>(_.spec, "a5d46ba2-1088-11ee-bf04-bd816741a8e6", _.syntax.literal);
 
 export type $OperatorKind = {
   "Infix": $.$expr_Literal<$OperatorKind>;
@@ -40,27 +40,27 @@ export type $OperatorKind = {
   "Prefix": $.$expr_Literal<$OperatorKind>;
   "Ternary": $.$expr_Literal<$OperatorKind>;
 } & $.EnumType<"schema::OperatorKind", ["Infix", "Postfix", "Prefix", "Ternary"]>;
-const OperatorKind: $OperatorKind = $.makeType<$OperatorKind>(_.spec, "1706eb42-108a-11ee-84fb-6bb1d4997c83", _.syntax.literal);
+const OperatorKind: $OperatorKind = $.makeType<$OperatorKind>(_.spec, "a5ce3d14-1088-11ee-ab8c-6f813703f690", _.syntax.literal);
 
 export type $ParameterKind = {
   "VariadicParam": $.$expr_Literal<$ParameterKind>;
   "NamedOnlyParam": $.$expr_Literal<$ParameterKind>;
   "PositionalParam": $.$expr_Literal<$ParameterKind>;
 } & $.EnumType<"schema::ParameterKind", ["VariadicParam", "NamedOnlyParam", "PositionalParam"]>;
-const ParameterKind: $ParameterKind = $.makeType<$ParameterKind>(_.spec, "17083e0c-108a-11ee-a7cd-859d712ad6c2", _.syntax.literal);
+const ParameterKind: $ParameterKind = $.makeType<$ParameterKind>(_.spec, "a5cf77d0-1088-11ee-b5ed-97367a3c3324", _.syntax.literal);
 
 export type $RewriteKind = {
   "Update": $.$expr_Literal<$RewriteKind>;
   "Insert": $.$expr_Literal<$RewriteKind>;
 } & $.EnumType<"schema::RewriteKind", ["Update", "Insert"]>;
-const RewriteKind: $RewriteKind = $.makeType<$RewriteKind>(_.spec, "170cbc06-108a-11ee-8a49-2fbf1b8a861a", _.syntax.literal);
+const RewriteKind: $RewriteKind = $.makeType<$RewriteKind>(_.spec, "a5d3cec4-1088-11ee-a8db-69ece8163655", _.syntax.literal);
 
 export type $SourceDeleteAction = {
   "DeleteTarget": $.$expr_Literal<$SourceDeleteAction>;
   "Allow": $.$expr_Literal<$SourceDeleteAction>;
   "DeleteTargetIfOrphan": $.$expr_Literal<$SourceDeleteAction>;
 } & $.EnumType<"schema::SourceDeleteAction", ["DeleteTarget", "Allow", "DeleteTargetIfOrphan"]>;
-const SourceDeleteAction: $SourceDeleteAction = $.makeType<$SourceDeleteAction>(_.spec, "1706450a-108a-11ee-ac1e-03ee59f286dd", _.syntax.literal);
+const SourceDeleteAction: $SourceDeleteAction = $.makeType<$SourceDeleteAction>(_.spec, "a5cd80f3-1088-11ee-8220-750c47f422da", _.syntax.literal);
 
 export type $TargetDeleteAction = {
   "Restrict": $.$expr_Literal<$TargetDeleteAction>;
@@ -68,64 +68,64 @@ export type $TargetDeleteAction = {
   "Allow": $.$expr_Literal<$TargetDeleteAction>;
   "DeferredRestrict": $.$expr_Literal<$TargetDeleteAction>;
 } & $.EnumType<"schema::TargetDeleteAction", ["Restrict", "DeleteSource", "Allow", "DeferredRestrict"]>;
-const TargetDeleteAction: $TargetDeleteAction = $.makeType<$TargetDeleteAction>(_.spec, "17059e06-108a-11ee-b4e5-c368b1d98789", _.syntax.literal);
+const TargetDeleteAction: $TargetDeleteAction = $.makeType<$TargetDeleteAction>(_.spec, "a5cce24a-1088-11ee-b545-f780811a5966", _.syntax.literal);
 
 export type $TriggerKind = {
   "Update": $.$expr_Literal<$TriggerKind>;
   "Delete": $.$expr_Literal<$TriggerKind>;
   "Insert": $.$expr_Literal<$TriggerKind>;
 } & $.EnumType<"schema::TriggerKind", ["Update", "Delete", "Insert"]>;
-const TriggerKind: $TriggerKind = $.makeType<$TriggerKind>(_.spec, "170b7395-108a-11ee-8b58-6d58a5c08a83", _.syntax.literal);
+const TriggerKind: $TriggerKind = $.makeType<$TriggerKind>(_.spec, "a5d29020-1088-11ee-9bf5-a9da87230603", _.syntax.literal);
 
 export type $TriggerScope = {
   "All": $.$expr_Literal<$TriggerScope>;
   "Each": $.$expr_Literal<$TriggerScope>;
 } & $.EnumType<"schema::TriggerScope", ["All", "Each"]>;
-const TriggerScope: $TriggerScope = $.makeType<$TriggerScope>(_.spec, "170c169e-108a-11ee-9573-551428bcaa6e", _.syntax.literal);
+const TriggerScope: $TriggerScope = $.makeType<$TriggerScope>(_.spec, "a5d3328d-1088-11ee-82b5-d13ad1bb8626", _.syntax.literal);
 
 export type $TriggerTiming = {
   "After": $.$expr_Literal<$TriggerTiming>;
   "AfterCommitOf": $.$expr_Literal<$TriggerTiming>;
 } & $.EnumType<"schema::TriggerTiming", ["After", "AfterCommitOf"]>;
-const TriggerTiming: $TriggerTiming = $.makeType<$TriggerTiming>(_.spec, "170ad089-108a-11ee-8061-6bcc472cdc0c", _.syntax.literal);
+const TriggerTiming: $TriggerTiming = $.makeType<$TriggerTiming>(_.spec, "a5d1f498-1088-11ee-9437-b703c908644b", _.syntax.literal);
 
 export type $TypeModifier = {
   "SetOfType": $.$expr_Literal<$TypeModifier>;
   "OptionalType": $.$expr_Literal<$TypeModifier>;
   "SingletonType": $.$expr_Literal<$TypeModifier>;
 } & $.EnumType<"schema::TypeModifier", ["SetOfType", "OptionalType", "SingletonType"]>;
-const TypeModifier: $TypeModifier = $.makeType<$TypeModifier>(_.spec, "1708e0ef-108a-11ee-8147-fb01830913bc", _.syntax.literal);
+const TypeModifier: $TypeModifier = $.makeType<$TypeModifier>(_.spec, "a5d01530-1088-11ee-aba8-3fe070d7ac1f", _.syntax.literal);
 
 export type $Volatility = {
   "Immutable": $.$expr_Literal<$Volatility>;
   "Stable": $.$expr_Literal<$Volatility>;
   "Volatile": $.$expr_Literal<$Volatility>;
 } & $.EnumType<"schema::Volatility", ["Immutable", "Stable", "Volatile"]>;
-const Volatility: $Volatility = $.makeType<$Volatility>(_.spec, "17079842-108a-11ee-b5cf-0157587c56af", _.syntax.literal);
+const Volatility: $Volatility = $.makeType<$Volatility>(_.spec, "a5cedb45-1088-11ee-afff-495415d5b842", _.syntax.literal);
 
-export type $Object_170e2345108a11eeaee10751f52623afλShape = $.typeutil.flatten<_std.$BaseObjectλShape & {
+export type $Object_a5d52f3e108811eebf96ddc09dc53d91λShape = $.typeutil.flatten<_std.$BaseObjectλShape & {
   "name": $.PropertyDesc<_std.$str, $.Cardinality.One, false, false, false, false>;
   "internal": $.PropertyDesc<_std.$bool, $.Cardinality.One, false, false, false, true>;
   "builtin": $.PropertyDesc<_std.$bool, $.Cardinality.One, false, false, false, true>;
   "computed_fields": $.PropertyDesc<$.ArrayType<_std.$str>, $.Cardinality.AtMostOne, false, false, false, false>;
 }>;
-type $Object_170e2345108a11eeaee10751f52623af = $.ObjectType<"schema::Object", $Object_170e2345108a11eeaee10751f52623afλShape, null, [
+type $Object_a5d52f3e108811eebf96ddc09dc53d91 = $.ObjectType<"schema::Object", $Object_a5d52f3e108811eebf96ddc09dc53d91λShape, null, [
   ..._std.$BaseObject['__exclusives__'],
 ]>;
-const $Object_170e2345108a11eeaee10751f52623af = $.makeType<$Object_170e2345108a11eeaee10751f52623af>(_.spec, "170e2345-108a-11ee-aee1-0751f52623af", _.syntax.literal);
+const $Object_a5d52f3e108811eebf96ddc09dc53d91 = $.makeType<$Object_a5d52f3e108811eebf96ddc09dc53d91>(_.spec, "a5d52f3e-1088-11ee-bf96-ddc09dc53d91", _.syntax.literal);
 
-const Object_170e2345108a11eeaee10751f52623af: $.$expr_PathNode<$.TypeSet<$Object_170e2345108a11eeaee10751f52623af, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Object_170e2345108a11eeaee10751f52623af, $.Cardinality.Many), null);
+const Object_a5d52f3e108811eebf96ddc09dc53d91: $.$expr_PathNode<$.TypeSet<$Object_a5d52f3e108811eebf96ddc09dc53d91, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Object_a5d52f3e108811eebf96ddc09dc53d91, $.Cardinality.Many), null);
 
-export type $SubclassableObjectλShape = $.typeutil.flatten<$Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $SubclassableObjectλShape = $.typeutil.flatten<$Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
   "abstract": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne, false, false, false, true>;
   "is_abstract": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne, false, true, false, true>;
   "final": $.PropertyDesc<_std.$bool, $.Cardinality.One, false, true, false, false>;
   "is_final": $.PropertyDesc<_std.$bool, $.Cardinality.One, false, true, false, false>;
 }>;
 type $SubclassableObject = $.ObjectType<"schema::SubclassableObject", $SubclassableObjectλShape, null, [
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
 ]>;
-const $SubclassableObject = $.makeType<$SubclassableObject>(_.spec, "17185409-108a-11ee-bb69-5ff340bdff52", _.syntax.literal);
+const $SubclassableObject = $.makeType<$SubclassableObject>(_.spec, "a5df34fb-1088-11ee-8089-e93b6519613c", _.syntax.literal);
 
 const SubclassableObject: $.$expr_PathNode<$.TypeSet<$SubclassableObject, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($SubclassableObject, $.Cardinality.Many), null);
 
@@ -169,11 +169,11 @@ export type $InheritingObjectλShape = $.typeutil.flatten<$SubclassableObjectλS
 type $InheritingObject = $.ObjectType<"schema::InheritingObject", $InheritingObjectλShape, null, [
   ...$SubclassableObject['__exclusives__'],
 ]>;
-const $InheritingObject = $.makeType<$InheritingObject>(_.spec, "18a1b418-108a-11ee-aaa5-5584e342f598", _.syntax.literal);
+const $InheritingObject = $.makeType<$InheritingObject>(_.spec, "a765823e-1088-11ee-b610-935c31a709f1", _.syntax.literal);
 
 const InheritingObject: $.$expr_PathNode<$.TypeSet<$InheritingObject, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($InheritingObject, $.Cardinality.Many), null);
 
-export type $AnnotationSubjectλShape = $.typeutil.flatten<$Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $AnnotationSubjectλShape = $.typeutil.flatten<$Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
   "annotations": $.LinkDesc<$Annotation, $.Cardinality.Many, {
     "@owned": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne>;
     "@is_owned": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne>;
@@ -181,9 +181,9 @@ export type $AnnotationSubjectλShape = $.typeutil.flatten<$Object_170e2345108a1
   }, false, false, false, false>;
 }>;
 type $AnnotationSubject = $.ObjectType<"schema::AnnotationSubject", $AnnotationSubjectλShape, null, [
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
 ]>;
-const $AnnotationSubject = $.makeType<$AnnotationSubject>(_.spec, "187c2db8-108a-11ee-ab2a-5daeb2e3ec78", _.syntax.literal);
+const $AnnotationSubject = $.makeType<$AnnotationSubject>(_.spec, "a7403ed9-1088-11ee-839e-2fbdfadf3b15", _.syntax.literal);
 
 const AnnotationSubject: $.$expr_PathNode<$.TypeSet<$AnnotationSubject, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($AnnotationSubject, $.Cardinality.Many), null);
 
@@ -201,7 +201,7 @@ type $AccessPolicy = $.ObjectType<"schema::AccessPolicy", $AccessPolicyλShape, 
   ...$InheritingObject['__exclusives__'],
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $AccessPolicy = $.makeType<$AccessPolicy>(_.spec, "19c833d2-108a-11ee-83d1-dfebe83defe9", _.syntax.literal);
+const $AccessPolicy = $.makeType<$AccessPolicy>(_.spec, "a887e650-1088-11ee-9e98-a94f377c38d6", _.syntax.literal);
 
 const AccessPolicy: $.$expr_PathNode<$.TypeSet<$AccessPolicy, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($AccessPolicy, $.Cardinality.Many), null);
 
@@ -212,7 +212,7 @@ export type $AliasλShape = $.typeutil.flatten<$AnnotationSubjectλShape & {
 type $Alias = $.ObjectType<"schema::Alias", $AliasλShape, null, [
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $Alias = $.makeType<$Alias>(_.spec, "1a467cc9-108a-11ee-9be5-0be977da4c49", _.syntax.literal);
+const $Alias = $.makeType<$Alias>(_.spec, "a904472a-1088-11ee-9403-013f47aa787f", _.syntax.literal);
 
 const Alias: $.$expr_PathNode<$.TypeSet<$Alias, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Alias, $.Cardinality.Many), null);
 
@@ -247,7 +247,7 @@ type $Annotation = $.ObjectType<"schema::Annotation", $AnnotationλShape, null, 
   ...$InheritingObject['__exclusives__'],
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $Annotation = $.makeType<$Annotation>(_.spec, "1887f76c-108a-11ee-af59-f52cfbccca16", _.syntax.literal);
+const $Annotation = $.makeType<$Annotation>(_.spec, "a74bfba5-1088-11ee-b8da-837cf16f1064", _.syntax.literal);
 
 const Annotation: $.$expr_PathNode<$.TypeSet<$Annotation, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Annotation, $.Cardinality.Many), null);
 
@@ -282,7 +282,7 @@ type $Type = $.ObjectType<"schema::Type", $TypeλShape, null, [
   ...$SubclassableObject['__exclusives__'],
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $Type = $.makeType<$Type>(_.spec, "1727e4ca-108a-11ee-982f-c95618d6139f", _.syntax.literal);
+const $Type = $.makeType<$Type>(_.spec, "a5ef0243-1088-11ee-9837-777d9aabf7b6", _.syntax.literal);
 
 const Type: $.$expr_PathNode<$.TypeSet<$Type, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Type, $.Cardinality.Many), null);
 
@@ -291,7 +291,7 @@ export type $PrimitiveTypeλShape = $.typeutil.flatten<$TypeλShape & {
 type $PrimitiveType = $.ObjectType<"schema::PrimitiveType", $PrimitiveTypeλShape, null, [
   ...$Type['__exclusives__'],
 ]>;
-const $PrimitiveType = $.makeType<$PrimitiveType>(_.spec, "175f357b-108a-11ee-a635-c7700e57f19d", _.syntax.literal);
+const $PrimitiveType = $.makeType<$PrimitiveType>(_.spec, "a625217c-1088-11ee-ae11-a7804f3caca6", _.syntax.literal);
 
 const PrimitiveType: $.$expr_PathNode<$.TypeSet<$PrimitiveType, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($PrimitiveType, $.Cardinality.Many), null);
 
@@ -300,7 +300,7 @@ export type $CollectionTypeλShape = $.typeutil.flatten<$PrimitiveTypeλShape & 
 type $CollectionType = $.ObjectType<"schema::CollectionType", $CollectionTypeλShape, null, [
   ...$PrimitiveType['__exclusives__'],
 ]>;
-const $CollectionType = $.makeType<$CollectionType>(_.spec, "177349b1-108a-11ee-890e-e956986074e0", _.syntax.literal);
+const $CollectionType = $.makeType<$CollectionType>(_.spec, "a638b916-1088-11ee-8c2d-d360128a1edf", _.syntax.literal);
 
 const CollectionType: $.$expr_PathNode<$.TypeSet<$CollectionType, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($CollectionType, $.Cardinality.Many), null);
 
@@ -311,7 +311,7 @@ export type $ArrayλShape = $.typeutil.flatten<$CollectionTypeλShape & {
 type $Array = $.ObjectType<"schema::Array", $ArrayλShape, null, [
   ...$CollectionType['__exclusives__'],
 ]>;
-const $Array = $.makeType<$Array>(_.spec, "1787f1f6-108a-11ee-ba06-698a5a9d162e", _.syntax.literal);
+const $Array = $.makeType<$Array>(_.spec, "a64cd483-1088-11ee-8340-dd56eb0f6a67", _.syntax.literal);
 
 const Array: $.$expr_PathNode<$.TypeSet<$Array, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Array, $.Cardinality.Many), null);
 
@@ -320,7 +320,7 @@ export type $ArrayExprAliasλShape = $.typeutil.flatten<$ArrayλShape & {
 type $ArrayExprAlias = $.ObjectType<"schema::ArrayExprAlias", $ArrayExprAliasλShape, null, [
   ...$Array['__exclusives__'],
 ]>;
-const $ArrayExprAlias = $.makeType<$ArrayExprAlias>(_.spec, "17a14eb2-108a-11ee-b3c2-99ff997c1e8c", _.syntax.literal);
+const $ArrayExprAlias = $.makeType<$ArrayExprAlias>(_.spec, "a66590a3-1088-11ee-845a-5d764e9f0a17", _.syntax.literal);
 
 const ArrayExprAlias: $.$expr_PathNode<$.TypeSet<$ArrayExprAlias, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($ArrayExprAlias, $.Cardinality.Many), null);
 
@@ -334,17 +334,17 @@ export type $CallableObjectλShape = $.typeutil.flatten<$AnnotationSubjectλShap
 type $CallableObject = $.ObjectType<"schema::CallableObject", $CallableObjectλShape, null, [
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $CallableObject = $.makeType<$CallableObject>(_.spec, "18cff9dc-108a-11ee-a659-31069449679f", _.syntax.literal);
+const $CallableObject = $.makeType<$CallableObject>(_.spec, "a792e428-1088-11ee-b751-cf0abb4931a5", _.syntax.literal);
 
 const CallableObject: $.$expr_PathNode<$.TypeSet<$CallableObject, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($CallableObject, $.Cardinality.Many), null);
 
-export type $VolatilitySubjectλShape = $.typeutil.flatten<$Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $VolatilitySubjectλShape = $.typeutil.flatten<$Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
   "volatility": $.PropertyDesc<$Volatility, $.Cardinality.AtMostOne, false, false, false, true>;
 }>;
 type $VolatilitySubject = $.ObjectType<"schema::VolatilitySubject", $VolatilitySubjectλShape, null, [
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
 ]>;
-const $VolatilitySubject = $.makeType<$VolatilitySubject>(_.spec, "18eb60f3-108a-11ee-9f57-99a88e4e93a5", _.syntax.literal);
+const $VolatilitySubject = $.makeType<$VolatilitySubject>(_.spec, "a7ade4ee-1088-11ee-82a5-f9077b726c04", _.syntax.literal);
 
 const VolatilitySubject: $.$expr_PathNode<$.TypeSet<$VolatilitySubject, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($VolatilitySubject, $.Cardinality.Many), null);
 
@@ -358,7 +358,7 @@ type $Cast = $.ObjectType<"schema::Cast", $CastλShape, null, [
   ...$AnnotationSubject['__exclusives__'],
   ...$VolatilitySubject['__exclusives__'],
 ]>;
-const $Cast = $.makeType<$Cast>(_.spec, "1d08125f-108a-11ee-96ad-b1c15b296e7c", _.syntax.literal);
+const $Cast = $.makeType<$Cast>(_.spec, "abbfbf27-1088-11ee-bfb9-55896a0c1a6a", _.syntax.literal);
 
 const Cast: $.$expr_PathNode<$.TypeSet<$Cast, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Cast, $.Cardinality.Many), null);
 
@@ -375,7 +375,7 @@ type $ConsistencySubject = $.ObjectType<"schema::ConsistencySubject", $Consisten
   ...$AnnotationSubject['__exclusives__'],
   {constraints: {__element__: $Constraint, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
 ]>;
-const $ConsistencySubject = $.makeType<$ConsistencySubject>(_.spec, "192ac11d-108a-11ee-88fd-9fee661b9be6", _.syntax.literal);
+const $ConsistencySubject = $.makeType<$ConsistencySubject>(_.spec, "a7ecbaf8-1088-11ee-ac5f-112c30987b0b", _.syntax.literal);
 
 const ConsistencySubject: $.$expr_PathNode<$.TypeSet<$ConsistencySubject, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($ConsistencySubject, $.Cardinality.Many), null);
 
@@ -403,31 +403,31 @@ type $Constraint = $.ObjectType<"schema::Constraint", $ConstraintλShape, null, 
   ...$CallableObject['__exclusives__'],
   ...$InheritingObject['__exclusives__'],
 ]>;
-const $Constraint = $.makeType<$Constraint>(_.spec, "18f93031-108a-11ee-bad1-5526eb0c8bc6", _.syntax.literal);
+const $Constraint = $.makeType<$Constraint>(_.spec, "a7bb68fc-1088-11ee-9021-0fc7d1ff3c2c", _.syntax.literal);
 
 const Constraint: $.$expr_PathNode<$.TypeSet<$Constraint, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Constraint, $.Cardinality.Many), null);
 
-export type $DeltaλShape = $.typeutil.flatten<$Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $DeltaλShape = $.typeutil.flatten<$Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
   "parents": $.LinkDesc<$Delta, $.Cardinality.Many, {}, false, false,  false, false>;
   "<parents[is schema::Delta]": $.LinkDesc<$Delta, $.Cardinality.Many, {}, false, false,  false, false>;
   "<parents": $.LinkDesc<$.ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
 }>;
 type $Delta = $.ObjectType<"schema::Delta", $DeltaλShape, null, [
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
 ]>;
-const $Delta = $.makeType<$Delta>(_.spec, "186d806e-108a-11ee-8ec8-a93f8d89299a", _.syntax.literal);
+const $Delta = $.makeType<$Delta>(_.spec, "a731ae99-1088-11ee-85d3-9b27d3159029", _.syntax.literal);
 
 const Delta: $.$expr_PathNode<$.TypeSet<$Delta, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Delta, $.Cardinality.Many), null);
 
-export type $ExtensionλShape = $.typeutil.flatten<$AnnotationSubjectλShape & $Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $ExtensionλShape = $.typeutil.flatten<$AnnotationSubjectλShape & $Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
   "package": $.LinkDesc<_sys.$ExtensionPackage, $.Cardinality.One, {}, true, false,  false, false>;
 }>;
 type $Extension = $.ObjectType<"schema::Extension", $ExtensionλShape, null, [
   ...$AnnotationSubject['__exclusives__'],
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
   {package: {__element__: _sys.$ExtensionPackage, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
 ]>;
-const $Extension = $.makeType<$Extension>(_.spec, "1d510bbf-108a-11ee-995a-f71e38ebff5b", _.syntax.literal);
+const $Extension = $.makeType<$Extension>(_.spec, "ac08c5b9-1088-11ee-8d58-21bbe84635f4", _.syntax.literal);
 
 const Extension: $.$expr_PathNode<$.TypeSet<$Extension, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Extension, $.Cardinality.Many), null);
 
@@ -443,16 +443,16 @@ type $Function = $.ObjectType<"schema::Function", $FunctionλShape, null, [
   ...$CallableObject['__exclusives__'],
   ...$VolatilitySubject['__exclusives__'],
 ]>;
-const $Function = $.makeType<$Function>(_.spec, "1cafb1e2-108a-11ee-b53c-852c83a4ee20", _.syntax.literal);
+const $Function = $.makeType<$Function>(_.spec, "ab66ce4f-1088-11ee-ac49-9bd7a8962af0", _.syntax.literal);
 
 const Function: $.$expr_PathNode<$.TypeSet<$Function, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Function, $.Cardinality.Many), null);
 
-export type $FutureBehaviorλShape = $.typeutil.flatten<$Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $FutureBehaviorλShape = $.typeutil.flatten<$Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
 }>;
 type $FutureBehavior = $.ObjectType<"schema::FutureBehavior", $FutureBehaviorλShape, null, [
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
 ]>;
-const $FutureBehavior = $.makeType<$FutureBehavior>(_.spec, "1d6dc6e2-108a-11ee-8abc-07e349b4a2f5", _.syntax.literal);
+const $FutureBehavior = $.makeType<$FutureBehavior>(_.spec, "ac73f52b-1088-11ee-93d5-dfa7f41f7a7d", _.syntax.literal);
 
 const FutureBehavior: $.$expr_PathNode<$.TypeSet<$FutureBehavior, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($FutureBehavior, $.Cardinality.Many), null);
 
@@ -468,7 +468,7 @@ export type $GlobalλShape = $.typeutil.flatten<$AnnotationSubjectλShape & {
 type $Global = $.ObjectType<"schema::Global", $GlobalλShape, null, [
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $Global = $.makeType<$Global>(_.spec, "1c8c2ada-108a-11ee-9ea4-9f801a3e5718", _.syntax.literal);
+const $Global = $.makeType<$Global>(_.spec, "ab434ac2-1088-11ee-8fb2-1508081c8dd9", _.syntax.literal);
 
 const Global: $.$expr_PathNode<$.TypeSet<$Global, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Global, $.Cardinality.Many), null);
 
@@ -480,15 +480,15 @@ export type $IndexλShape = $.typeutil.flatten<$InheritingObjectλShape & $Annot
   "expr": $.PropertyDesc<_std.$str, $.Cardinality.AtMostOne, false, false, false, false>;
   "kwargs": $.PropertyDesc<$.ArrayType<$.NamedTupleType<{name: _std.$str, expr: _std.$str}>>, $.Cardinality.AtMostOne, false, false, false, false>;
   "<indexes[is schema::Source]": $.LinkDesc<$Source, $.Cardinality.AtMostOne, {}, false, false,  false, false>;
-  "<indexes[is schema::Link]": $.LinkDesc<$Link, $.Cardinality.AtMostOne, {}, false, false,  false, false>;
   "<indexes[is schema::ObjectType]": $.LinkDesc<$ObjectType, $.Cardinality.AtMostOne, {}, false, false,  false, false>;
+  "<indexes[is schema::Link]": $.LinkDesc<$Link, $.Cardinality.AtMostOne, {}, false, false,  false, false>;
   "<indexes": $.LinkDesc<$.ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
 }>;
 type $Index = $.ObjectType<"schema::Index", $IndexλShape, null, [
   ...$InheritingObject['__exclusives__'],
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $Index = $.makeType<$Index>(_.spec, "1952ae5a-108a-11ee-bddf-4b3efab3a05e", _.syntax.literal);
+const $Index = $.makeType<$Index>(_.spec, "a8149656-1088-11ee-8d7a-39522e616fef", _.syntax.literal);
 
 const Index: $.$expr_PathNode<$.TypeSet<$Index, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Index, $.Cardinality.Many), null);
 
@@ -516,11 +516,11 @@ type $Pointer = $.ObjectType<"schema::Pointer", $PointerλShape, null, [
   ...$AnnotationSubject['__exclusives__'],
   {rewrites: {__element__: $Rewrite, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
 ]>;
-const $Pointer = $.makeType<$Pointer>(_.spec, "1994086f-108a-11ee-9f8f-c7d0c41bc3a5", _.syntax.literal);
+const $Pointer = $.makeType<$Pointer>(_.spec, "a85558af-1088-11ee-b0f1-6f4e0c101672", _.syntax.literal);
 
 const Pointer: $.$expr_PathNode<$.TypeSet<$Pointer, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Pointer, $.Cardinality.Many), null);
 
-export type $SourceλShape = $.typeutil.flatten<$Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $SourceλShape = $.typeutil.flatten<$Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
   "pointers": $.LinkDesc<$Pointer, $.Cardinality.Many, {
     "@owned": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne>;
     "@is_owned": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne>;
@@ -535,11 +535,11 @@ export type $SourceλShape = $.typeutil.flatten<$Object_170e2345108a11eeaee10751
   "<source": $.LinkDesc<$.ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
 }>;
 type $Source = $.ObjectType<"schema::Source", $SourceλShape, null, [
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
-  {indexes: {__element__: $Index, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
   {pointers: {__element__: $Pointer, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
+  {indexes: {__element__: $Index, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
 ]>;
-const $Source = $.makeType<$Source>(_.spec, "197f48af-108a-11ee-bd72-3d74b561c0f8", _.syntax.literal);
+const $Source = $.makeType<$Source>(_.spec, "a8409a91-1088-11ee-af59-f1bcea43d638", _.syntax.literal);
 
 const Source: $.$expr_PathNode<$.TypeSet<$Source, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Source, $.Cardinality.Many), null);
 
@@ -558,11 +558,11 @@ type $Link = $.ObjectType<"schema::Link", $LinkλShape, null, [
   ...$Pointer['__exclusives__'],
   ...$Source['__exclusives__'],
 ]>;
-const $Link = $.makeType<$Link>(_.spec, "1bab00d7-108a-11ee-b518-059f06957bea", _.syntax.literal);
+const $Link = $.makeType<$Link>(_.spec, "aa64d9ba-1088-11ee-986b-59de2291bc01", _.syntax.literal);
 
 const Link: $.$expr_PathNode<$.TypeSet<$Link, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Link, $.Cardinality.Many), null);
 
-export type $MigrationλShape = $.typeutil.flatten<$AnnotationSubjectλShape & $Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $MigrationλShape = $.typeutil.flatten<$AnnotationSubjectλShape & $Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
   "parents": $.LinkDesc<$Migration, $.Cardinality.Many, {}, false, false,  false, false>;
   "script": $.PropertyDesc<_std.$str, $.Cardinality.One, false, false, false, false>;
   "message": $.PropertyDesc<_std.$str, $.Cardinality.AtMostOne, false, false, false, false>;
@@ -572,30 +572,30 @@ export type $MigrationλShape = $.typeutil.flatten<$AnnotationSubjectλShape & $
 }>;
 type $Migration = $.ObjectType<"schema::Migration", $MigrationλShape, null, [
   ...$AnnotationSubject['__exclusives__'],
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
 ]>;
-const $Migration = $.makeType<$Migration>(_.spec, "1d300b9b-108a-11ee-8416-5ff6e8a17403", _.syntax.literal);
+const $Migration = $.makeType<$Migration>(_.spec, "abe7b73d-1088-11ee-8ae6-97362509cf1a", _.syntax.literal);
 
 const Migration: $.$expr_PathNode<$.TypeSet<$Migration, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Migration, $.Cardinality.Many), null);
 
-export type $ModuleλShape = $.typeutil.flatten<$AnnotationSubjectλShape & $Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $ModuleλShape = $.typeutil.flatten<$AnnotationSubjectλShape & $Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
 }>;
 type $Module = $.ObjectType<"schema::Module", $ModuleλShape, null, [
   ...$AnnotationSubject['__exclusives__'],
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
 ]>;
-const $Module = $.makeType<$Module>(_.spec, "1754a311-108a-11ee-85f5-113eaa43b58a", _.syntax.literal);
+const $Module = $.makeType<$Module>(_.spec, "a61acc29-1088-11ee-a7e6-4bd1689eb111", _.syntax.literal);
 
 const Module: $.$expr_PathNode<$.TypeSet<$Module, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Module, $.Cardinality.Many), null);
 
 export type $ObjectTypeλShape = $.typeutil.flatten<$SourceλShape & Omit<$ConsistencySubjectλShape, "<subject"> & $InheritingObjectλShape & Omit<$TypeλShape, "<target"> & $AnnotationSubjectλShape & {
   "union_of": $.LinkDesc<$ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
   "intersection_of": $.LinkDesc<$ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
-  "properties": $.LinkDesc<$Property, $.Cardinality.Many, {
+  "links": $.LinkDesc<$Link, $.Cardinality.Many, {
     "@owned": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne>;
     "@is_owned": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne>;
   }, false, true, false, false>;
-  "links": $.LinkDesc<$Link, $.Cardinality.Many, {
+  "properties": $.LinkDesc<$Property, $.Cardinality.Many, {
     "@owned": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne>;
     "@is_owned": $.PropertyDesc<_std.$bool, $.Cardinality.AtMostOne>;
   }, false, true, false, false>;
@@ -610,15 +610,15 @@ export type $ObjectTypeλShape = $.typeutil.flatten<$SourceλShape & Omit<$Consi
   "compound_type": $.PropertyDesc<_std.$bool, $.Cardinality.One, false, true, false, false>;
   "is_compound_type": $.PropertyDesc<_std.$bool, $.Cardinality.One, false, true, false, false>;
   "<__type__[is std::BaseObject]": $.LinkDesc<$.ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
-  "<__type__[is schema::Object]": $.LinkDesc<$Object_170e2345108a11eeaee10751f52623af, $.Cardinality.Many, {}, false, false,  false, false>;
+  "<__type__[is schema::Object]": $.LinkDesc<$Object_a5d52f3e108811eebf96ddc09dc53d91, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__[is schema::VolatilitySubject]": $.LinkDesc<$VolatilitySubject, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__[is schema::AnnotationSubject]": $.LinkDesc<$AnnotationSubject, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__[is schema::Delta]": $.LinkDesc<$Delta, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__[is schema::SubclassableObject]": $.LinkDesc<$SubclassableObject, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__[is schema::InheritingObject]": $.LinkDesc<$InheritingObject, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__[is schema::TupleElement]": $.LinkDesc<$TupleElement, $.Cardinality.Many, {}, false, false,  false, false>;
-  "<__type__[is std::Object]": $.LinkDesc<_std.$Object_169a5ce7108a11eeb5af6feb88c88f11, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__[is std::FreeObject]": $.LinkDesc<_std.$FreeObject, $.Cardinality.Many, {}, false, false,  false, false>;
+  "<__type__[is std::Object]": $.LinkDesc<_std.$Object_a5651777108811ee82a44f13c3f73cee, $.Cardinality.Many, {}, false, false,  false, false>;
   "<union_of[is schema::ObjectType]": $.LinkDesc<$ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
   "<intersection_of[is schema::ObjectType]": $.LinkDesc<$ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
   "<subject[is schema::AccessPolicy]": $.LinkDesc<$AccessPolicy, $.Cardinality.Many, {}, false, false,  false, false>;
@@ -673,8 +673,7 @@ export type $ObjectTypeλShape = $.typeutil.flatten<$SourceλShape & Omit<$Consi
   "<__type__[is schema::Trigger]": $.LinkDesc<$Trigger, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__[is schema::ObjectType]": $.LinkDesc<$ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__[is schema::Extension]": $.LinkDesc<$Extension, $.Cardinality.Many, {}, false, false,  false, false>;
-  "<__type__[is Person]": $.LinkDesc<_default.$Person, $.Cardinality.Many, {}, false, false,  false, false>;
-  "<__type__[is Movie]": $.LinkDesc<_default.$Movie, $.Cardinality.Many, {}, false, false,  false, false>;
+  "<__type__[is FitchleNode]": $.LinkDesc<_default.$FitchleNode, $.Cardinality.Many, {}, false, false,  false, false>;
   "<__type__": $.LinkDesc<$.ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
   "<intersection_of": $.LinkDesc<$.ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
   "<subject": $.LinkDesc<$.ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
@@ -687,10 +686,10 @@ type $ObjectType = $.ObjectType<"schema::ObjectType", $ObjectTypeλShape, null, 
   ...$InheritingObject['__exclusives__'],
   ...$Type['__exclusives__'],
   ...$AnnotationSubject['__exclusives__'],
-  {triggers: {__element__: $Trigger, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
   {access_policies: {__element__: $AccessPolicy, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
+  {triggers: {__element__: $Trigger, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
 ]>;
-const $ObjectType = $.makeType<$ObjectType>(_.spec, "1aa08835-108a-11ee-bd06-bd5dd256b2d9", _.syntax.literal);
+const $ObjectType = $.makeType<$ObjectType>(_.spec, "a95df1b3-1088-11ee-b1fa-394143e5e3e1", _.syntax.literal);
 
 const ObjectType: $.$expr_PathNode<$.TypeSet<$ObjectType, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($ObjectType, $.Cardinality.Many), null);
 
@@ -703,11 +702,11 @@ type $Operator = $.ObjectType<"schema::Operator", $OperatorλShape, null, [
   ...$CallableObject['__exclusives__'],
   ...$VolatilitySubject['__exclusives__'],
 ]>;
-const $Operator = $.makeType<$Operator>(_.spec, "1cdd01fc-108a-11ee-8a9c-b988c2bcfe34", _.syntax.literal);
+const $Operator = $.makeType<$Operator>(_.spec, "ab94874b-1088-11ee-8b63-d5f695860740", _.syntax.literal);
 
 const Operator: $.$expr_PathNode<$.TypeSet<$Operator, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Operator, $.Cardinality.Many), null);
 
-export type $ParameterλShape = $.typeutil.flatten<$Object_170e2345108a11eeaee10751f52623afλShape & {
+export type $ParameterλShape = $.typeutil.flatten<$Object_a5d52f3e108811eebf96ddc09dc53d91λShape & {
   "type": $.LinkDesc<$Type, $.Cardinality.One, {}, false, false,  false, false>;
   "typemod": $.PropertyDesc<$TypeModifier, $.Cardinality.One, false, false, false, false>;
   "kind": $.PropertyDesc<$ParameterKind, $.Cardinality.One, false, false, false, false>;
@@ -721,9 +720,9 @@ export type $ParameterλShape = $.typeutil.flatten<$Object_170e2345108a11eeaee10
   "<params": $.LinkDesc<$.ObjectType, $.Cardinality.Many, {}, false, false,  false, false>;
 }>;
 type $Parameter = $.ObjectType<"schema::Parameter", $ParameterλShape, null, [
-  ...$Object_170e2345108a11eeaee10751f52623af['__exclusives__'],
+  ...$Object_a5d52f3e108811eebf96ddc09dc53d91['__exclusives__'],
 ]>;
-const $Parameter = $.makeType<$Parameter>(_.spec, "18bc63d9-108a-11ee-ae23-93dff95f45e6", _.syntax.literal);
+const $Parameter = $.makeType<$Parameter>(_.spec, "a77f99c8-1088-11ee-8837-2f4812a3c3f9", _.syntax.literal);
 
 const Parameter: $.$expr_PathNode<$.TypeSet<$Parameter, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Parameter, $.Cardinality.Many), null);
 
@@ -735,7 +734,7 @@ export type $PropertyλShape = $.typeutil.flatten<$PointerλShape & {
 type $Property = $.ObjectType<"schema::Property", $PropertyλShape, null, [
   ...$Pointer['__exclusives__'],
 ]>;
-const $Property = $.makeType<$Property>(_.spec, "1bfcf727-108a-11ee-b39f-ef8bbf96b893", _.syntax.literal);
+const $Property = $.makeType<$Property>(_.spec, "aab58866-1088-11ee-b23b-23784a8e8e15", _.syntax.literal);
 
 const Property: $.$expr_PathNode<$.TypeSet<$Property, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Property, $.Cardinality.Many), null);
 
@@ -745,7 +744,7 @@ type $PseudoType = $.ObjectType<"schema::PseudoType", $PseudoTypeλShape, null, 
   ...$InheritingObject['__exclusives__'],
   ...$Type['__exclusives__'],
 ]>;
-const $PseudoType = $.makeType<$PseudoType>(_.spec, "173795e7-108a-11ee-9023-11ac5a7647df", _.syntax.literal);
+const $PseudoType = $.makeType<$PseudoType>(_.spec, "a5fe6d32-1088-11ee-af1b-55ad996d599f", _.syntax.literal);
 
 const PseudoType: $.$expr_PathNode<$.TypeSet<$PseudoType, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($PseudoType, $.Cardinality.Many), null);
 
@@ -755,7 +754,7 @@ export type $RangeλShape = $.typeutil.flatten<$CollectionTypeλShape & {
 type $Range = $.ObjectType<"schema::Range", $RangeλShape, null, [
   ...$CollectionType['__exclusives__'],
 ]>;
-const $Range = $.makeType<$Range>(_.spec, "17fe6ca6-108a-11ee-b16d-f394e1e50e0a", _.syntax.literal);
+const $Range = $.makeType<$Range>(_.spec, "a6fea288-1088-11ee-ad04-39f676277141", _.syntax.literal);
 
 const Range: $.$expr_PathNode<$.TypeSet<$Range, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Range, $.Cardinality.Many), null);
 
@@ -764,7 +763,7 @@ export type $RangeExprAliasλShape = $.typeutil.flatten<$RangeλShape & {
 type $RangeExprAlias = $.ObjectType<"schema::RangeExprAlias", $RangeExprAliasλShape, null, [
   ...$Range['__exclusives__'],
 ]>;
-const $RangeExprAlias = $.makeType<$RangeExprAlias>(_.spec, "1817b9c7-108a-11ee-89cb-193727590b46", _.syntax.literal);
+const $RangeExprAlias = $.makeType<$RangeExprAlias>(_.spec, "a718497b-1088-11ee-a53e-a9edf5f5c029", _.syntax.literal);
 
 const RangeExprAlias: $.$expr_PathNode<$.TypeSet<$RangeExprAlias, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($RangeExprAlias, $.Cardinality.Many), null);
 
@@ -781,7 +780,7 @@ type $Rewrite = $.ObjectType<"schema::Rewrite", $RewriteλShape, null, [
   ...$InheritingObject['__exclusives__'],
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $Rewrite = $.makeType<$Rewrite>(_.spec, "1a160d74-108a-11ee-8712-8907f6a76a9f", _.syntax.literal);
+const $Rewrite = $.makeType<$Rewrite>(_.spec, "a8d3bded-1088-11ee-8ae0-415291bbce32", _.syntax.literal);
 
 const Rewrite: $.$expr_PathNode<$.TypeSet<$Rewrite, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Rewrite, $.Cardinality.Many), null);
 
@@ -795,7 +794,7 @@ type $ScalarType = $.ObjectType<"schema::ScalarType", $ScalarTypeλShape, null, 
   ...$ConsistencySubject['__exclusives__'],
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $ScalarType = $.makeType<$ScalarType>(_.spec, "1a60e50d-108a-11ee-be75-af5b85ef6bee", _.syntax.literal);
+const $ScalarType = $.makeType<$ScalarType>(_.spec, "a91ed2f3-1088-11ee-af14-c307563e6df3", _.syntax.literal);
 
 const ScalarType: $.$expr_PathNode<$.TypeSet<$ScalarType, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($ScalarType, $.Cardinality.Many), null);
 
@@ -812,7 +811,7 @@ type $Trigger = $.ObjectType<"schema::Trigger", $TriggerλShape, null, [
   ...$InheritingObject['__exclusives__'],
   ...$AnnotationSubject['__exclusives__'],
 ]>;
-const $Trigger = $.makeType<$Trigger>(_.spec, "19ef1c62-108a-11ee-b05a-696474423c70", _.syntax.literal);
+const $Trigger = $.makeType<$Trigger>(_.spec, "a8ad99bd-1088-11ee-ab1e-dd72a08440ba", _.syntax.literal);
 
 const Trigger: $.$expr_PathNode<$.TypeSet<$Trigger, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Trigger, $.Cardinality.Many), null);
 
@@ -826,7 +825,7 @@ type $Tuple = $.ObjectType<"schema::Tuple", $TupleλShape, null, [
   ...$CollectionType['__exclusives__'],
   {element_types: {__element__: $TupleElement, __cardinality__: $.Cardinality.One | $.Cardinality.AtMostOne },},
 ]>;
-const $Tuple = $.makeType<$Tuple>(_.spec, "17c3b717-108a-11ee-aaf4-73b44799bbf4", _.syntax.literal);
+const $Tuple = $.makeType<$Tuple>(_.spec, "a687763f-1088-11ee-81c8-d7be446e9ea1", _.syntax.literal);
 
 const Tuple: $.$expr_PathNode<$.TypeSet<$Tuple, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($Tuple, $.Cardinality.Many), null);
 
@@ -840,7 +839,7 @@ export type $TupleElementλShape = $.typeutil.flatten<_std.$BaseObjectλShape & 
 type $TupleElement = $.ObjectType<"schema::TupleElement", $TupleElementλShape, null, [
   ..._std.$BaseObject['__exclusives__'],
 ]>;
-const $TupleElement = $.makeType<$TupleElement>(_.spec, "17baa8bb-108a-11ee-9bdd-17090421a9f1", _.syntax.literal);
+const $TupleElement = $.makeType<$TupleElement>(_.spec, "a67e241c-1088-11ee-b424-0780e978491d", _.syntax.literal);
 
 const TupleElement: $.$expr_PathNode<$.TypeSet<$TupleElement, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($TupleElement, $.Cardinality.Many), null);
 
@@ -849,13 +848,13 @@ export type $TupleExprAliasλShape = $.typeutil.flatten<$TupleλShape & {
 type $TupleExprAlias = $.ObjectType<"schema::TupleExprAlias", $TupleExprAliasλShape, null, [
   ...$Tuple['__exclusives__'],
 ]>;
-const $TupleExprAlias = $.makeType<$TupleExprAlias>(_.spec, "17e02cb6-108a-11ee-b333-cb1b63e6d31b", _.syntax.literal);
+const $TupleExprAlias = $.makeType<$TupleExprAlias>(_.spec, "a6e0aafb-1088-11ee-8f80-0794a9efe497", _.syntax.literal);
 
 const TupleExprAlias: $.$expr_PathNode<$.TypeSet<$TupleExprAlias, $.Cardinality.Many>, null> = _.syntax.$PathNode($.$toSet($TupleExprAlias, $.Cardinality.Many), null);
 
 
 
-export { AccessKind, AccessPolicyAction, Cardinality, MigrationGeneratedBy, OperatorKind, ParameterKind, RewriteKind, SourceDeleteAction, TargetDeleteAction, TriggerKind, TriggerScope, TriggerTiming, TypeModifier, Volatility, $Object_170e2345108a11eeaee10751f52623af, Object_170e2345108a11eeaee10751f52623af, $SubclassableObject, SubclassableObject, $InheritingObject, InheritingObject, $AnnotationSubject, AnnotationSubject, $AccessPolicy, AccessPolicy, $Alias, Alias, $Annotation, Annotation, $Type, Type, $PrimitiveType, PrimitiveType, $CollectionType, CollectionType, $Array, Array, $ArrayExprAlias, ArrayExprAlias, $CallableObject, CallableObject, $VolatilitySubject, VolatilitySubject, $Cast, Cast, $ConsistencySubject, ConsistencySubject, $Constraint, Constraint, $Delta, Delta, $Extension, Extension, $Function, Function, $FutureBehavior, FutureBehavior, $Global, Global, $Index, Index, $Pointer, Pointer, $Source, Source, $Link, Link, $Migration, Migration, $Module, Module, $ObjectType, ObjectType, $Operator, Operator, $Parameter, Parameter, $Property, Property, $PseudoType, PseudoType, $Range, Range, $RangeExprAlias, RangeExprAlias, $Rewrite, Rewrite, $ScalarType, ScalarType, $Trigger, Trigger, $Tuple, Tuple, $TupleElement, TupleElement, $TupleExprAlias, TupleExprAlias };
+export { AccessKind, AccessPolicyAction, Cardinality, MigrationGeneratedBy, OperatorKind, ParameterKind, RewriteKind, SourceDeleteAction, TargetDeleteAction, TriggerKind, TriggerScope, TriggerTiming, TypeModifier, Volatility, $Object_a5d52f3e108811eebf96ddc09dc53d91, Object_a5d52f3e108811eebf96ddc09dc53d91, $SubclassableObject, SubclassableObject, $InheritingObject, InheritingObject, $AnnotationSubject, AnnotationSubject, $AccessPolicy, AccessPolicy, $Alias, Alias, $Annotation, Annotation, $Type, Type, $PrimitiveType, PrimitiveType, $CollectionType, CollectionType, $Array, Array, $ArrayExprAlias, ArrayExprAlias, $CallableObject, CallableObject, $VolatilitySubject, VolatilitySubject, $Cast, Cast, $ConsistencySubject, ConsistencySubject, $Constraint, Constraint, $Delta, Delta, $Extension, Extension, $Function, Function, $FutureBehavior, FutureBehavior, $Global, Global, $Index, Index, $Pointer, Pointer, $Source, Source, $Link, Link, $Migration, Migration, $Module, Module, $ObjectType, ObjectType, $Operator, Operator, $Parameter, Parameter, $Property, Property, $PseudoType, PseudoType, $Range, Range, $RangeExprAlias, RangeExprAlias, $Rewrite, Rewrite, $ScalarType, ScalarType, $Trigger, Trigger, $Tuple, Tuple, $TupleElement, TupleElement, $TupleExprAlias, TupleExprAlias };
 
 type __defaultExports = {
   "AccessKind": typeof AccessKind;
@@ -872,7 +871,7 @@ type __defaultExports = {
   "TriggerTiming": typeof TriggerTiming;
   "TypeModifier": typeof TypeModifier;
   "Volatility": typeof Volatility;
-  "Object": typeof Object_170e2345108a11eeaee10751f52623af;
+  "Object": typeof Object_a5d52f3e108811eebf96ddc09dc53d91;
   "SubclassableObject": typeof SubclassableObject;
   "InheritingObject": typeof InheritingObject;
   "AnnotationSubject": typeof AnnotationSubject;
@@ -929,7 +928,7 @@ const __defaultExports: __defaultExports = {
   "TriggerTiming": TriggerTiming,
   "TypeModifier": TypeModifier,
   "Volatility": Volatility,
-  "Object": Object_170e2345108a11eeaee10751f52623af,
+  "Object": Object_a5d52f3e108811eebf96ddc09dc53d91,
   "SubclassableObject": SubclassableObject,
   "InheritingObject": InheritingObject,
   "AnnotationSubject": AnnotationSubject,

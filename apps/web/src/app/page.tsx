@@ -6,7 +6,7 @@ import React, { useEffect } from "react";
 import { api } from "../services/api";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import {Button} from "@stackfitch/ui"
+import {StorybookButton} from "@stackfitch/ui"
 import {RiArrowRightFill, RiArrowRightLine} from "react-icons/ri"
 
 const Header = () => {
@@ -40,10 +40,7 @@ const Header = () => {
           Behance
         </a>
       </nav>
-      <div className="place-items-center place-self-center lg:place-self-end">
-        <Link href={"http://localhost:6006/"} target="_blank" className="bg-rose-600 font-bold p-4 px-8 rounded-xl text-white border-white border-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300">Storybook</Link>
-      </div>
-      <Button></Button>
+      <StorybookButton text="Storybook" href="http://localhost:6006"></StorybookButton>
     </div>
   );
 };
@@ -63,7 +60,8 @@ const Background = () => {
 const Home = observer(() => {
   const query = api.greetings.greetings.useQuery();
   const message = query.data?.message ?? "Fetching...";
-
+  const nodes = query.data?.nodes ?? [] as Array<any>;
+  
   const textState = useLocalObservable(() => ({
     text: "",
     defaultText: "You can start editing!",
@@ -102,8 +100,9 @@ const Home = observer(() => {
           </h2>
 
           <h3 className="m-auto w-full my-10 text-center text-white font-black text-lg lg:text-2xl opacity-30 absolute bottom-0">
-            <span className="text-green-500 under">API &gt; </span>{message}
+            <span className="text-green-500 under">API &gt; </span>{message} <br/><span className="text-green-500 under">Nodes &gt; </span> [{nodes.map(n => n.name).join(",")}]
           </h3>
+          
         </div>
       </main>
     </>
