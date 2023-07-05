@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  edgedb:
+    build:
+      context: .
+      dockerfile: images/Dockerfile.stackfitch
+    networks:
+      - database
+    container_name: database
+    environment:
+      EDGEDB_SERVER_PASSWORD: "${DB_PASSWORD}"
+      EDGEDB_SERVER_SECURITY: insecure_dev_mode
+      EDGEDB_SERVER_TLS_CERT_FILE: /certs/cert.pem
+      EDGEDB_SERVER_TLS_KEY_FILE: /certs/key.pem
+      EDGEDB_SERVER_ADMIN_UI: enabled
+    ports:
+      - "${PORT}:${PORT}"
+
+networks:
+  database:
+    external: true

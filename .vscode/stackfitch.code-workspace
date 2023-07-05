@@ -1,0 +1,24 @@
+{
+    "folders": [
+        {
+            "path": "../apps/",
+            "name": "🚀 Apps"
+        },
+        {
+            "path": "../packages",
+            "name": "📦 Packages"
+        },
+        {
+            "path": "../services",
+            "name": "🖥️ Services"
+        },
+        {
+            "path": "../packages/config",
+            "name": "⚙️ Configurations"
+        },
+        {
+            "path": "..",
+            "name": " "
+        }
+    ]
+}

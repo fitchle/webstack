@@ -1,0 +1,10 @@
+{
+  "extends": "@stackfitch/tsconfig/base.json",
+  "compilerOptions": {
+    "resolveJsonModule": true
+  },
+  "include": [
+    "index.ts",
+    "dbschema/**/*"
+  ]
+}
