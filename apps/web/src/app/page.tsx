@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import {StorybookButton} from "@stackfitch/ui"
 import {RiArrowRightFill, RiArrowRightLine} from "react-icons/ri"
+import { toast } from "react-hot-toast";
 
 const Header = () => {
   const router = useRouter();
@@ -40,7 +41,7 @@ const Header = () => {
           Behance
         </a>
       </nav>
-      <StorybookButton text="Storybook" href="http://localhost:6006"></StorybookButton>
+      <StorybookButton onClick={() => toast.success("Storybooook!")} text="Storybook" href="http://localhost:6006"></StorybookButton>
     </div>
   );
 };
