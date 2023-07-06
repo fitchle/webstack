@@ -6,8 +6,8 @@ const panelExclude = setConsoleOptions({
 }).panelExclude as any;
 
 const preview: Preview = {
+  decorators: [(storyFn, context) => withConsole({panelExclude: [...panelExclude, "Warning! withConsole doesn't support @storybook/undefined. Use setConsoleOptions instead"]})(storyFn)(context)],
   parameters: {
-    decorators: [(storyFn, context) => withConsole({panelExclude: [...panelExclude, "Warning! withConsole doesn't support @storybook/undefined. Use setConsoleOptions instead"]})(storyFn)(context)],
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
