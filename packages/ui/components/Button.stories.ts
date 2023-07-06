@@ -6,7 +6,8 @@ const meta: Meta<typeof StorybookButton> = {
   title: "Fitchle/Button",
   component: StorybookButton,
   parameters: {
-    layout: "centered"
+    layout: "centered",
+    actions: {}
   },
 };
 
