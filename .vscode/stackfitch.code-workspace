@@ -20,5 +20,17 @@
             "path": "..",
             "name": " "
         }
-    ]
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.git": true,
+            "**/.svn": true,
+            "**/.hg": true,
+            "**/CVS": true,
+            "**/.DS_Store": true,
+            "**/Thumbs.db": true,
+            "[!u]*/**": true,
+            "u[!i]*/**": true
+        }
+    }
 }
