@@ -1,12 +1,5 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 import '@storybook/addon-console';
-import { setConsoleOptions } from "@storybook/addon-console";
-
-const panelExclude = setConsoleOptions({
-}).panelExclude as any;
-setConsoleOptions({
-  panelExclude: [...panelExclude, /deprecated/],
-});
 
 const config: StorybookConfig = {
   stories: ["../components/**/*.stories.@(js|jsx|ts|tsx)"],
