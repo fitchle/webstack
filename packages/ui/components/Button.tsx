@@ -1,9 +1,3 @@
-import React from "react";
-
-type User = {
-  name: string;
-};
-
 export const StorybookButton = (props: {
   text: string;
   href: string;
