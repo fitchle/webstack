@@ -1,10 +1,11 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
-const tsConfig = require("../tsconfig/base.json")
+const tsConfig = require("../tsconfig/base.json");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
-  mode: 'jit',
+  mode: "jit",
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
