@@ -3,12 +3,12 @@ import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "../trpc";
 
 export const helloRouter = createTRPCRouter({
-  greetings: publicProcedure.query(async ({ ctx }) => {
-    const query = await ctx.e
-      .select(ctx.e.FitchleNode, () => ({
+  greetings: publicProcedure.input(z.object({})).query(async ({ ctx }) => {
+    const query = await ctx.db.fitchleNode.findMany({
+      select: {
         name: true,
-      }))
-      .run(ctx.client);
+      },
+    });
 
     return {
       message: "Welcome to Stackfitch API!",

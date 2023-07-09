@@ -28,6 +28,9 @@
     },
     "db:generate": {
       "dependsOn": ["^db:generate"]
+    },
+    "db:studio": {
+      "dependsOn": ["^dev", "^db:studio"]
     }
   }
 }
