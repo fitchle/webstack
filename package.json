@@ -8,7 +8,7 @@
     "setup": "turbo setup --parallel",
     "db:setup": "turbo db:setup --parallel",
     "db:generate": "turbo db:generate --parallel",
-    "db:push": "turbo db:push --parallel && turbo db:generate --parallel",
+    "db:push": "turbo db:push --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {

@@ -13,8 +13,10 @@ function Layout({
   return (
     <html>
       <Provider>
-        <Toaster position="bottom-left"/>
-        <body className={"bg-black overflow-hidden"}>{children}</body>
+        <body className={"bg-black overflow-hidden"}>
+          <main className="">{children}</main>
+          <Toaster position="bottom-left" />
+        </body>
       </Provider>
     </html>
   );
