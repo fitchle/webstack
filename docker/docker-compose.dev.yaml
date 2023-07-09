@@ -8,13 +8,11 @@ services:
       - database
     container_name: database
     environment:
-      EDGEDB_SERVER_PASSWORD: "${DB_PASSWORD}"
-      EDGEDB_SERVER_SECURITY: insecure_dev_mode
-      EDGEDB_SERVER_TLS_CERT_FILE: /certs/cert.pem
-      EDGEDB_SERVER_TLS_KEY_FILE: /certs/key.pem
-      EDGEDB_SERVER_ADMIN_UI: enabled
+      POSTGRES_PASSWORD: "${DB_PASSWORD}"
+      POSTGRES_USER: "${DB_USER}"
+      POSTGRES_DB: "${DB_DBNAME}"
     ports:
-      - "${PORT}:${PORT}"
+      - "${PORT}:5432"
 
 networks:
   database:

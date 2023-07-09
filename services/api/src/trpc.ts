@@ -7,7 +7,7 @@
  * The pieces you will need to use are documented accordingly near the end
  */
 
-import { client, e, edgedb } from "@stackfitch/db";
+import { client } from "@stackfitch/db";
 import { TRPCError, initTRPC } from "@trpc/server";
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 import superjson from "superjson";
@@ -38,8 +38,7 @@ type CreateContextOptions = {
 const createInnerTRPCContext = (opts: CreateContextOptions) => {
   return {
     // session: opts.session,
-    e,
-    client
+    db: client,
   };
 };
 

@@ -1,13 +1,11 @@
-'use client';
+"use client";
 import { runInAction } from "mobx";
 import { observer, useLocalObservable } from "mobx-react-lite";
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { api } from "../services/api";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
-import {StorybookButton} from "@stackfitch/ui"
-import {RiArrowRightFill, RiArrowRightLine} from "react-icons/ri"
+import { StorybookButton } from "@stackfitch/ui";
 import { toast } from "react-hot-toast";
 
 const Header = () => {
@@ -41,7 +39,11 @@ const Header = () => {
           Behance
         </a>
       </nav>
-      <StorybookButton onClick={() => toast.success("Storybooook!")} text="Storybook" href="http://localhost:6006"></StorybookButton>
+      <StorybookButton
+        onClick={() => toast.success("Storybooook!")}
+        text="Storybook"
+        href="http://localhost:6006"
+      ></StorybookButton>
     </div>
   );
 };
@@ -56,13 +58,11 @@ const Background = () => {
   );
 };
 
-
-
 const Home = observer(() => {
-  const query = api.greetings.greetings.useQuery();
+  const query = api.greetings.greetings.useQuery({});
   const message = query.data?.message ?? "Fetching...";
-  const nodes = query.data?.nodes ?? [] as Array<any>;
-  
+  const nodes = query.data?.nodes ?? ([] as Array<any>);
+
   const textState = useLocalObservable(() => ({
     text: "",
     defaultText: "You can start editing!",
@@ -70,21 +70,22 @@ const Home = observer(() => {
       this.text += str;
     },
     async removeLast() {
-      runInAction(() => {
-        this.text = this.text.slice(0, -1)
-      })
-    }
-  }))
+      await runInAction(async () => {
+        this.text = await this.text.slice(0, -1);
+      });
+    },
+  }));
+
   async function start() {
     for (let index = 0; index < textState.defaultText.length; index++) {
       const char = textState.defaultText.charAt(index);
-      await new Promise(f => setTimeout(f, 75));
-      await textState.appendText(char)
+      await new Promise((f) => setTimeout(f, 75));
+      await textState.appendText(char);
     }
   }
   useEffect(() => {
     start();
-  }, [])
+  }, []);
   return (
     <>
       <Background />
@@ -101,9 +102,11 @@ const Home = observer(() => {
           </h2>
 
           <h3 className="m-auto w-full my-10 text-center text-white font-black text-lg lg:text-2xl opacity-30 absolute bottom-0">
-            <span className="text-green-500 under">API &gt; </span>{message} <br/><span className="text-green-500 under">Nodes &gt; </span> [{nodes.map(n => n.name).join(",")}]
+            <span className="text-green-500 under">API &gt; </span>
+            {message} <br />
+            <span className="text-green-500 under">Nodes &gt; </span> [
+            {nodes.map((n) => n.name).join(",")}]
           </h3>
-          
         </div>
       </main>
     </>
